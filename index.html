@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CoffeeShop</title>
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="./css/index.css">
+    
+    </head>
+<body>
+    <Section class="nav">
+        <a href="#" class="logo option"><i class="fas fa-coffee">Coffee Shop</i></a>
+        <nav>
+            <a href="#" class="option">Home</a>
+            <a href="#aboutUs" class="option">About</a>
+            <a href="#menu" class="option">Menu</a>
+            <a href="#contactUs" class="option">Contact</a>
+    
+            
+        </nav>
+            <i class="fa-solid fa-bars" id="toggleBtn"></i>
+        </Section>
+
+        <div class="background"></div>
+    
+        <!-- home -->
+    <section class="home-content">
+        <h1>Discover  the real taste of coffee</h1>
+        <div class="flex">
+            <button>Order Now</button>
+        </div>
+    </section>
+
+        <!-- about -->
+        <section class="about" id="aboutUs">
+            <div class="grid">
+                <div class="col">
+                    <img src="/images/1912.i211.035..coffee cup on table realistic.jpg" alt="about">
+                </div>
+    
+                <div class="col">
+                    <h2>What Makes us special</h2>
+                    <div class="flex">
+                        <div class="line"></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium dolorem consequatur doloribus
+                        veniam. Nobis corporis, amet, eligendi alias qui, ex voluptas architecto doloremque error
+                        consectetur porro rem. Nemo corrupti voluptatem, hic, suscipit est vitae amet incidunt nihil quaerat
+                        iure doloribus! Quisquam in eos neque veritatis dolorem fugiat eveniet iure minus.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+           <!-- menu -->
+    <section class="menu" id="menu">
+        <h2>What we serve</h2>
+        <div class="flex">
+            <div class="line"></div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="img">
+                    <img src="/images/Americano.png" alt="Americano">
+                </div>
+
+                <div class="flex">
+                    <div class="name">Americano</div>
+                    <div class="price">&#36;10</div>
+                </div>
+                <button class="order">Order</button>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <img src="/images/Doppio.png" alt="Doppio">
+                </div>
+
+                <div class="flex">
+                    <div class="name">Doppio</div>
+                    <div class="price">&#36;18</div>
+                </div>
+                <button class="order">Order</button>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <img src="/images/cortado.png" alt="Cortado">
+                </div>
+
+                <div class="flex">
+                    <div class="name">Cortado</div>
+                    <div class="price">&#36;12</div>
+                </div>
+                <button class="order">Order</button>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <img src="/images/cup-coffee-rays_420555-207.jpg" alt="Classic Coffee Espresso">
+                </div>
+
+                <div class="flex">
+                    <div class="name">Espresso</div>
+                    <div class="price">&#36;15</div>
+                </div>
+                <button class="order">Order</button>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <img src="/images/cup-fresh-coffee.jpg" alt="mocha latte">
+                </div>
+
+                <div class="flex">
+                    <div class="name">mocha latte</div>
+                    <div class="price">&#36;10</div>
+                </div>
+                <button class="order">Order</button>
+            </div>
+
+            <div class="card">
+                <div class="img">
+                    <img src="/images/morning-coffee.webp" alt="Macchiato">
+                </div>
+
+                <div class="flex">
+                    <div class="name">Macchiato</div>
+                    <div class="price">&#36;12</div>
+                </div>
+                <button class="order">Order</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- contact -->
+    <section class="contact home-content" id="contactUs">
+        <h2>Send Us a Message</h2>
+        <form id="myform" novalidate action="">
+            <input type="text" name="firstname"  placeholder="Enter Name" id="name">
+
+            <textarea name="message" id="message" placeholder="Mesasge"></textarea>
+            <P id="errorEmail"></P>
+            <button>Submit</button>
+        </form>
+    </section>
+
+    
+       <!-- Footer -->
+       <footer class="ft">
+        <div class="ft-content">
+            <h2>Follow for more update</h2>
+        </div>
+
+        <div class="ft-bottom">
+            <ul>
+                <li class="social-item"><a href=""><i class="fa-brands fa-github"></i></a></li>
+                <li class="social-item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="social-item"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="social-item"><a href=""><i class="fa-sharp fa-solid fa-m"></i></a></li>
+            </ul>
+            <p>Copyright &#169 2020</p>
+        </div>
+    </footer>
+
+    <script src="/js/jquery-3.6.1.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

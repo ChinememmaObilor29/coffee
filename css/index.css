@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    text-decoration: none;
+    transition-duration: 900ms;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* NAV STYLES ****** */
+section.nav{
+    background-color: #2f2721;
+    color: whitesmoke;
+    padding: 15px 0;
+    display: flex;
+    box-shadow: grey 0px 5px 5px;
+ 
+}
+
+section nav{
+    margin-left: auto;
+}
+
+section.nav a.option {
+    color: inherit;
+    padding: 10px;
+}
+
+nav  a.logo{
+    font-size: 1.5em;
+}
+
+ #toggleBtn{
+    display: none;
+}
+nav a.option:not(a.logo):hover {
+    color: #d3ad7f;
+}   
+
+ @keyframes bounce {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);     
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+nav a.logo:hover {
+    animation-name: bounce;
+    animation-duration: 500ms;
+    animation-iteration-count: 2;
+} 
+
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/1912.i211.035..coffee\ cup\ on\ table\ realistic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+section.home-content{
+    text-align: center;
+    color: whitesmoke;
+    padding: 250px 20px;
+    background-color: #000000cb;
+    text-transform: uppercase;
+
+}
+section.home-content h1{
+    font-size: 32px;
+    padding: 20px 0;
+}
+section.home-content .flex{
+    display: flex;
+    justify-content: center;
+}
+section.home-content button{
+    background-color: #d3ad7f;
+    color: whitesmoke;
+    border: none;
+    padding: 20px 45px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+section.about{
+    background-color: white;
+    padding: 30px;
+    
+}
+section.about .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+section.about .grid .col{
+    text-align: center;   
+}
+section.about .grid .col h2{
+    color: #2f2721;
+    padding-top: 10px;
+    margin-top: 15%;
+}
+section.about .grid .col img{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+section.about .grid .col .flex{
+    display: flex;
+    justify-content: center;
+}
+section.about .grid .col .flex .line{
+    margin: 15px 0;
+    width: 50%;
+    height: 3px;
+    background-color: #d3ad7f;
+}
+section.about .grid .col p{
+    padding: 20px 0;
+}
+
+section.menu{
+    background-color: white;
+    padding: 30px;   
+}
+section.menu h2{
+    text-align: center;
+    color: #2f2721;
+    padding-top: 10px;
+}
+
+section.menu .flex{
+    display: flex;
+    justify-content: center;
+}
+
+section.menu .flex .line{
+    margin: 15px 0;
+    width: 50%;
+    height: 3px;
+    background-color: #d3ad7f;
+}
+
+section.menu .grid{
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    gap: 10px;
+    padding: 20px 10%;
+}
+section.menu .grid .card{
+    background-color: #2f2721;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+section.menu .grid .card .img{
+    padding: 20px 20%;
+}
+section.menu .grid .card img{
+    display: block;
+    width: 100%;
+    clip-path: circle(); 
+}
+
+section.menu .grid .card .flex{
+    justify-content: space-between;
+    padding: 10px;
+}
+
+section.menu .grid .card button{
+    background-color: #d3ad7f;
+    color: whitesmoke;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: none;
+    margin-bottom: 0;
+}
+
+section.menu .grid .card:hover button{
+    display: block;
+}
+
+section.contact{
+    padding: 100px 20px;
+}
+
+section.contact h2{
+    margin-left: 3rem;
+    color: #d3ad7f;
+}
+
+section.contact form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+section.contact form input, textarea, button{
+    display: block;
+    width: 400px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: #2f2721;
+    color: whitesmoke;
+}
+section.contact form button{
+    width: 400px;
+}
+section.contact form textarea{
+    height: 90px;
+    resize: none;
+} 
+#errorEmail{
+    position: relative;
+    right: 120px;
+    color: red;
+}
+
+
+
+/* footer */
+footer.ft{
+    background-color: #2f2721;
+}
+footer.ft .ft-content{
+    padding: 10%;
+    font-size: 24px;
+}
+footer.ft .ft-content h2{
+    margin-left: 5rem;
+    color: #d3ad7f;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+footer ul li{
+    padding: 8px;
+    margin-right: 12px;
+}
+
+footer ul li a{
+    color: #d3ad7f;
+}
+
+footer p{
+    color: #d3ad7f;
+    font-size: 12px;
+    position: relative;
+    bottom: 20px;
+}
+
+
+@media all and (max-width: 993px){
+    html{
+        font-size: 100%;
+    }
+
+    section.about .grid .col h2{
+        color: #2f2721;
+        padding-top: 10px;
+        margin-top: 3rem;
+    }
+
+    section.contact form .fa-user{
+        position: absolute;
+        margin-bottom: 14rem;
+        left: 20rem;
+    }
+    
+    section.contact form .fa-envelope{
+        position: absolute;
+        margin-bottom: 5rem;
+        left: 20rem;
+    }
+    
+    section.contact form .fa-phone{
+        position: absolute;
+        margin-bottom: -4rem;
+        left: 20rem;
+    }
+}
+
+@media all and (max-width: 768px){
+    html{
+        font-size: 100%;
+    }
+
+   nav{
+     display: flex;
+     flex-direction: column;
+     position: fixed;
+     top: -1000rem;
+      right: 0;
+      width: 45%;
+      align-items: flex-end;
+      margin-top: 100px;
+      margin-right: 20px;
+   }
+
+   nav.active{
+    top: 0px;
+   }
+
+   section.nav{
+    background-color: #2f2721;
+    color: whitesmoke;
+}
+
+nav a.option:not(a.logo):hover {
+    color: #d3ad7f;
+}
+
+   #toggleBtn{
+    display: initial;
+    padding-left: 75%;
+   }
+
+   section.about .grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   }
+
+   section.about .grid .col img{
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    margin-top: 14%;
+}
+
+   section.contact form .fa-user{
+    position: absolute;
+    margin-bottom: 14rem;
+    left: 13rem;
+}
+
+section.contact form .fa-envelope{
+    position: absolute;
+    margin-bottom: 5rem;
+    left: 13rem;
+}
+
+section.contact form .fa-phone{
+    position: absolute;
+    margin-bottom: -4rem;
+    left: 13rem;
+}
+
+footer.ft .ft-content{
+    padding: 5%;
+    font-size: 24px;
+}
+
+footer.ft .ft-content h2{
+    margin-left: -2px;
+    color: #d3ad7f;
+}
+}
+
+@media all and (max-width: 375px){
+    body{
+        overflow: hidden;
+    }
+    
+    html{
+        font-size: 50%;
+    }
+
+    section.contact form .fa-user{
+        position: absolute;
+        margin-bottom: 29rem;
+        font-size: 150%;
+        left: 3rem;
+    }
+ 
+    section.contact form input, textarea{
+        width: 350px;
+    } 
+    section.contact form button{
+        width: 200px;
+    }
+    #toggleBtn{
+        position: relative;
+        right: 10px;
+        top: 10px;
+        font-size: 15px;
+    }
+
+    footer.ft .ft-content{
+        padding: 3%;
+        font-size: 20px;
+    }
+    
+    footer.ft .ft-content h2{
+        margin-left: -2px;
+        color: #d3ad7f;
+    }
+
+}
+
+@media all and (max-width: 425px){
+    html{
+        font-size: 50%;
+    }
+
+    section.contact form .fa-user{
+        position: absolute;
+        margin-bottom: 29rem;
+        font-size: 150%;
+        left: 3rem;
+    }
+    
+    section.contact form .fa-envelope{
+        position: absolute;
+        margin-bottom: 10rem;
+        font-size: 150%;
+        left: 3rem;
+    }
+    
+    section.contact form .fa-phone{
+        position: absolute;
+        margin-bottom: -8rem;
+        font-size: 150%;
+        left: 3rem;
+    }
+
+    footer.ft .ft-content{
+        padding: 3%;
+        font-size: 20px;
+    }
+    
+    footer.ft .ft-content h2{
+        margin-left: -2px;
+        color: #d3ad7f;
+    }
+
+}
